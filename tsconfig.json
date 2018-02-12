@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es3",
+    "module": "commonjs",
+    "lib": ["es2015"],
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "declaration": true,
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true
+  },
+  "files": [
+    "src/index.ts"
+  ]
+}

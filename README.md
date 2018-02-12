@@ -1,9 +1,8 @@
-# [TypeScript FSA](https://github.com/aikoven/typescript-fsa) utilities for redux-saga [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
- 
+# [TypeScript FSA](https://github.com/biko2/typescript-fsa-redux-saga-extended) utilities for redux-saga
 ## Installation
 
 ```
-npm install --save typescript-fsa-redux-saga
+npm install --save typescript-fsa-redux-saga-extended
 ```
 
 ## API
@@ -48,8 +47,3 @@ function* watchIncrementAsync() {
     );
 }
 ```
-
-[npm-image]: https://badge.fury.io/js/typescript-fsa-redux-saga.svg
-[npm-url]: https://badge.fury.io/js/typescript-fsa-redux-saga
-[travis-image]: https://travis-ci.org/aikoven/typescript-fsa-redux-saga.svg?branch=master
-[travis-url]: https://travis-ci.org/aikoven/typescript-fsa-redux-saga

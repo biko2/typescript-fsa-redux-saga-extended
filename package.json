@@ -1,6 +1,6 @@
 {
   "name": "typescript-fsa-redux-saga-extended",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript FSA utilities for redux-saga",
   "keywords": [
     "redux-saga",
@@ -18,7 +18,7 @@
     "clean": "rimraf lib",
     "lint": "tslint -c tslint.json src/**/*.ts tests/**/*.ts",
     "build": "tsc",
-    "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
+    "prepublish": "npm run clean && npm run lint && npm run build"
   },
   "author": "Alberto Silva <alberto.silva@gmail.com>",
   "license": "MIT",

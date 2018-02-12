@@ -5,19 +5,25 @@ import { put, call, cancelled } from "redux-saga/effects";
 export function bindAsyncAction<P, R>(
   actionCreators: AsyncActionCreators<P, R, any>,
 ): {
-    (worker: (action: Action<typeof actionCreators.started>) => Promise<R> | SagaIterator):
+    (worker: (action: Action<typeof actionCreators.started>)
+      => Promise<R> | SagaIterator):
       (action: Action<typeof actionCreators.started>) => SagaIterator;
 
-    <A1>(worker: (action: Action<typeof actionCreators.started>, arg1: A1) => Promise<R> | SagaIterator):
+    <A1>(worker: (action: Action<typeof actionCreators.started>, arg1: A1)
+      => Promise<R> | SagaIterator):
       (action: Action<typeof actionCreators.started>, arg1: A1) => SagaIterator;
 
     <A1, A2>(worker: (action: Action<typeof actionCreators.started>, arg1: A1,
       arg2: A2) => Promise<R> | SagaIterator):
-      (action: Action<typeof actionCreators.started>, arg1: A1, arg2: A2) => SagaIterator;
+      (action: Action<typeof actionCreators.started>, arg1: A1, arg2: A2)
+        => SagaIterator;
 
-    <A1, A2, A3>(worker: (action: Action<typeof actionCreators.started>, arg1: A1, arg2: A2, arg3: A3,
-      ...rest: any[]) => Promise<R> | SagaIterator):
-      (action: Action<typeof actionCreators.started>, arg1: A1, arg2: A2, arg3: A3, ...rest: any[]) => SagaIterator;
+    <A1, A2, A3>(
+      worker: (action: Action<typeof actionCreators.started>,
+        arg1: A1, arg2: A2, arg3: A3,
+        ...rest: any[]) => Promise<R> | SagaIterator):
+      (action: Action<typeof actionCreators.started>,
+        arg1: A1, arg2: A2, arg3: A3, ...rest: any[]) => SagaIterator;
   };
 
 export function bindAsyncAction<P, R>(

@@ -7,7 +7,5 @@
     "noImplicitAny": true,
     "noImplicitReturns": true
   },
-  "include": [
-    "tests/*.ts"
-  ]
+  "include": ["tests/*.ts"]
 }

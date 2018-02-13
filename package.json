@@ -2,29 +2,25 @@
   "name": "typescript-fsa-redux-saga-extended",
   "version": "1.0.1",
   "description": "TypeScript FSA utilities for redux-saga",
-  "keywords": [
-    "redux-saga",
-    "typescript",
-    "action",
-    "action creator"
-  ],
+  "keywords": ["redux-saga", "typescript", "action", "action creator"],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
-  "files": [
-    "src",
-    "lib"
-  ],
+  "files": ["src", "lib"],
   "scripts": {
     "clean": "rimraf lib",
     "lint": "tslint -c tslint.json src/**/*.ts tests/**/*.ts",
+    "test": "ts-node -P tsconfig.tests.json node_modules/.bin/tape tests/*.ts",
     "build": "tsc",
-    "prepublish": "npm run clean && npm run lint && npm run build"
+    "prepublish":
+      "npm run clean && npm run lint && npm run test && npm run build"
   },
   "author": "Alberto Silva <alberto.silva@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/tape": "^4.2.28",
     "redux": "^3.6.0",
     "rimraf": "^2.5.4",
+    "tape": "^4.6.2",
     "ts-node": "^3.3.0",
     "tslint": "^4.1.0",
     "typescript": "^2.5.2"

@@ -1,6 +1,6 @@
 {
   "name": "typescript-fsa-redux-saga-extended",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeScript FSA utilities for redux-saga",
   "keywords": ["redux-saga", "typescript", "action", "action creator"],
   "main": "lib/index.js",
@@ -26,7 +26,7 @@
     "typescript": "^2.5.2"
   },
   "dependencies": {
-    "redux-saga": ">=0.14.0 <0.16.0",
+    "redux-saga": ">=0.14.0 <=0.16.0",
     "tslib": "^1.7.1",
     "typescript-fsa": "^2.0.0"
   }

@@ -1,6 +1,6 @@
 {
   "name": "typescript-fsa-redux-saga-extended",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "TypeScript FSA utilities for redux-saga",
   "keywords": ["redux-saga", "typescript", "action", "action creator"],
   "main": "lib/index.js",

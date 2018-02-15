@@ -15,6 +15,7 @@
       "npm run clean && npm run lint && npm run test && npm run build"
   },
   "author": "Alberto Silva <alberto.silva@gmail.com>",
+  "repository": "/biko2/typescript-fsa-redux-saga-extended",
   "license": "MIT",
   "devDependencies": {
     "@types/tape": "^4.2.28",
